@@ -47,6 +47,9 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
 
 asyncMove("container");
 asyncMove("tube");
+asyncMove("straight");
+asyncMove("straight-curve");
+asyncMove("curve");
 let startAnimation = async () => {
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
