@@ -17,7 +17,7 @@ let arrayRemove = (arr, value) => {
  * "sixth-tube",
  * "seventh-tube",
  */
-ids = ["container", "tube"];
+ids = ["container", "tube", "straight", "straight-curve", "curve"];
 
 /* Original working function */
 
@@ -47,9 +47,9 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
 
 asyncMove("container");
 asyncMove("tube");
-asyncMove("straight");
-asyncMove("straight-curve");
-asyncMove("curve");
+// asyncMove("straight");
+// asyncMove("straight-curve");
+// asyncMove("curve");
 let startAnimation = async () => {
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
@@ -86,7 +86,12 @@ let startAn = async () => {
   resetEverything();
   document.getElementById("startbutton").disabled = true;
   document.getElementById("resetbutton").disabled = true;
-  await startAnimation();
+  const flow = document.getElementById("dropdown1").value;
+  await Promise.all([
+    asyncMove("container"),
+    asyncMove("tube"),
+    asyncMove(flow),
+  ]);
   document.getElementById("startbutton").disabled = false;
   document.getElementById("resetbutton").disabled = false;
 };
