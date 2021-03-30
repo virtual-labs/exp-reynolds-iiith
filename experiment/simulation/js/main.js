@@ -79,7 +79,9 @@ let resetEverything = () => {
     path.setAttribute("offset", 0);
   });
 };
+
 disablestart = false;
+
 let startAn = async () => {
   resetEverything();
   document.getElementById("startbutton").disabled = true;
