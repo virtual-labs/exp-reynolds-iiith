@@ -8,29 +8,7 @@ let arrayRemove = (arr, value) => {
   });
 };
 
-/**
- * "first-tube",
- * "second-tube",
- * "third-tube",
- * "fourth-tube",
- * "fifth-tube",
- * "sixth-tube",
- * "seventh-tube",
- */
 ids = ["container", "tube", "straight", "straight-curve", "curve"];
-
-/* Original working function */
-
-// let asyncMove = async (id, curPosition=0, finalPosition=1) => {
-//   let path = document.getElementById(id);
-//     while(true){
-//       if (curPosition > finalPosition)
-//         break
-//       curPosition += 0.01;
-//       path.setAttribute("offset", curPosition);
-//       await sleep(0.5)
-//     }
-// }
 
 let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   let path = document.getElementById(id);
@@ -43,13 +21,20 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
     path.setAttribute("offset", curPosition);
     await sleep(0.5);
   }
+  if (id == "straight-curve") {
+    asyncMove("straight-curve1");
+  }
+  if (id == "straight-curve1") {
+    asyncMove("straight-curve2");
+  }
+  if (id == "straight-curve2") {
+    asyncMove("straight-curve3");
+  }
+  if (id == "straight-curve3") {
+    asyncMove("straight-curve4");
+  }
 };
 
-asyncMove("container");
-asyncMove("tube");
-// asyncMove("straight");
-// asyncMove("straight-curve");
-// asyncMove("curve");
 let startAnimation = async () => {
   for (let i = 0; i < ids.length; i++) {
     id = ids[i];
@@ -69,8 +54,13 @@ let startAnimation = async () => {
 };
 
 let resetEverything = () => {
-  tube_ids = [];
-  tube_ids.forEach((element) => {
+  flow_ids = [
+    "straight-curve1",
+    "straight-curve2",
+    "straight-curve3",
+    "straight-curve4",
+  ];
+  flow_ids.forEach((element) => {
     let path = document.getElementById(element);
     path.setAttribute("offset", 0);
   });
