@@ -33,6 +33,18 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   if (id == "straight-curve3") {
     asyncMove("straight-curve4");
   }
+  if (id == "curve") {
+    asyncMove("curve1");
+  }
+  if (id == "curve1") {
+    asyncMove("curve2");
+  }
+  if (id == "curve2") {
+    asyncMove("curve3");
+  }
+  if (id == "curve3") {
+    asyncMove("curve4");
+  }
 };
 
 let startAnimation = async () => {
