@@ -71,6 +71,10 @@ let resetEverything = () => {
     "straight-curve2",
     "straight-curve3",
     "straight-curve4",
+    "curve1",
+    "curve2",
+    "curve3",
+    "curve4",
   ];
   flow_ids.forEach((element) => {
     let path = document.getElementById(element);
