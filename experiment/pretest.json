@@ -1,0 +1,18 @@
+[
+    {
+       "question":"1. Flow to be laminar the Reynolds number should be greater than 2000. ",
+       "answers":{
+          "a":"True ",
+          "b":"False "
+       },
+       "correctAnswer":"b"
+    },
+    {
+       "question":"2. For flow to be turbulent the flow should be more than 400.",
+       "answers":{
+          "a":"True ",
+          "b":"False "
+       },
+       "correctAnswer":"b"
+    }
+ ]

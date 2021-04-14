@@ -8,12 +8,12 @@ let arrayRemove = (arr, value) => {
   });
 };
 
-ids = ["container", "tube", "straight", "straight-curve", "curve"];
+let ids = ["container", "tube", "straight", "straight-curve", "curve"];
 
 let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
   let path = document.getElementById(id);
   while (true) {
-    speed2 = document.getElementById("water-flow").value;
+    let speed2 = document.getElementById("water-flow").value;
     speed2 = speed2 * 0.0002;
     speed2 = speed2 == 0 ? 0.0002 : speed2;
     if (curPosition > finalPosition) break;
@@ -34,39 +34,21 @@ let asyncMove = async (id, curPosition = 0, finalPosition = 1) => {
     asyncMove("straight-curve4");
   }
   if (id == "curve") {
-    asyncMove("curve1");
+    asyncMove("curve2");
   }
   if (id == "curve1") {
     asyncMove("curve2");
   }
   if (id == "curve2") {
-    asyncMove("curve3");
-  }
-  if (id == "curve3") {
     asyncMove("curve4");
   }
-};
-
-let startAnimation = async () => {
-  for (let i = 0; i < ids.length; i++) {
-    id = ids[i];
-    let path = document.getElementById(id);
-    let finalPosition = 1;
-    let curPosition = 0;
-    while (true) {
-      speed2 = document.getElementById("water-flow").value;
-      speed2 = speed2 * 0.0002;
-      speed2 = speed2 == 0 ? 0.0002 : speed2;
-      if (curPosition > finalPosition) break;
-      curPosition += speed2;
-      path.setAttribute("offset", curPosition);
-      await sleep(0.5);
-    }
+  if (id == "curve4") {
+    asyncMove("curve3");
   }
 };
 
 let resetEverything = () => {
-  flow_ids = [
+  let flow_ids = [
     "straight-curve1",
     "straight-curve2",
     "straight-curve3",
@@ -86,9 +68,7 @@ let resetEverything = () => {
   });
 };
 
-disablestart = false;
-
-let startAn = async () => {
+let startAnimation = async () => {
   resetEverything();
   document.getElementById("startbutton").disabled = true;
   document.getElementById("resetbutton").disabled = true;
