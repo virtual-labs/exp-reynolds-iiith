@@ -1,0 +1,26 @@
+[
+    {
+       "question":"1. Concept of Reynolds number is used in open channels. ",
+       "answers":{
+          "a":"True",
+          "b":"False"
+       },
+       "correctAnswer":"b"
+    },
+    {
+       "question":"The behavior of path lines is laminar flow. ",
+       "answers":{
+          "a":"True",
+          "b":"False"
+       },
+       "correctAnswer":"b"
+    },
+    {
+       "question":"If the Reynolds number is in between 2000 and 4000 then the flow is. ",
+       "answers":{
+          "a":" Transitional flow",
+          "b":"Laminar flow "
+       },
+       "correctAnswer":"a"
+    }
+ ]
