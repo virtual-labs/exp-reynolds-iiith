@@ -9,4 +9,4 @@ Procedure for the experiment is as follows:
 7. Click/Tap on the **Reset** button to restart the expeirment afresh, i.e., with empty apparatus.
 
 
-To read about the Procedure of the experiment click [here](docs/6.Channels.pdf)(docs/7.Reynolds_experiment.pdf)
+To read about the Procedure of the experiment click [here](docs/7.Reynolds_experiment.pdf)
