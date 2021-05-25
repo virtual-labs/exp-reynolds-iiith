@@ -2,4 +2,4 @@ The purpose of this experiment is to illustrate the influence of Reynolds number
 
 To perform the Reynolds experiment for determination of different regimes of flow. 
 
-[Read more about the experiment in detail.](docs/7.Reynolds_experiment.pdf)
+To read about the Aim of the experiment click [here](docs/6.Channels.pdf)(docs/7.Reynolds_experiment.pdf)
