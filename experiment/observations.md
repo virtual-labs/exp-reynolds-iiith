@@ -1,3 +1,4 @@
- <center><img src="images/image1.png"> <br></p> </center>
+ <img src="images/image1.png">  
 
-[Read More](docs/7.Reynolds_experiment.pdf)
+To read about the Observations of the experiment click [here](docs/7.Reynolds_experiment.pdf)
+
