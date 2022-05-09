@@ -1,11 +1,12 @@
 <html>
   <head>
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
       <div class="center">
         <button
           type="button"
-          class="action-button btn btn-lg"
+          class="v-button btn btn-lg"
           id="startbutton"
           onclick="startAnimation()"
         >
@@ -21,7 +22,7 @@
         </button>
         <button
           type="button"
-          class="action-button btn btn-lg"
+          class="v-button btn btn-lg"
           id="resetbutton"
           onclick="resetEverything()"
         >
@@ -29,21 +30,23 @@
         </button>
       </div>
     </div>
-    <div class="slidecontainer">
-      <label for="customRange1" class="form-label">Control flow speed</label>
-      <input type="range" class="form-range" id="water-flow" />
+    <div class="column">
+      <p>Control flow speed</p>
+      <input type="range" class="v-slider-full" id="water-flow" />
     </div>
-    <div class="dropdowncontainer">
-      <label for="customRange1" class="form-label">Choose flow type</label>
-      <select
-        id="dropdown1"
-        class="form-select form-select-lg mb-3"
-        aria-label=".form-select-lg example"
-      >
-        <option value="straight">Laminar</option>
-        <option value="straight-curve">Transitional</option>
-        <option value="curve">Tubular</option>
-      </select>
+    <div class="column center-content">
+      <div class="v-select">
+        <select
+          id="dropdown1"
+          class="form-select form-select-lg mb-3"
+          aria-label=".form-select-lg example"
+        >
+          <option >Choose flow type</option>
+          <option value="straight">Laminar</option>
+          <option value="straight-curve">Transitional</option>
+          <option value="curve">Tubular</option>
+        </select>
+      </div>
     </div>
     <svg
       viewBox="0 0 1030 565"

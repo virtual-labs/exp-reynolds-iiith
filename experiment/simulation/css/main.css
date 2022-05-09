@@ -12,15 +12,15 @@
   transform: translate(-50%, -50%);
 }
 
-.slidecontainer {
-  width: 30%; /* Width of the outside container */
-  margin-top: 20px;
+/*.slidecontainer {
+  width: 30%;*/ /* Width of the outside container */
+/*  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
+}*/
 
-.dropdowncontainer {
+/*.dropdowncontainer {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
@@ -39,3 +39,4 @@
 .action-button:hover {
   background-color: #a9a9a9;
 }
+*/
