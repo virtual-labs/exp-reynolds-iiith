@@ -1,0 +1,4 @@
+- To determine the Reynolds number for flow through a pipe.
+- To identify laminar, transitional, and turbulent flow regimes.
+- To study the effect of flow velocity on the nature of fluid flow.
+- To verify the significance of Reynolds number in classifying fluid motion.

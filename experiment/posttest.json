@@ -1,26 +1,158 @@
-[
+{
+  "version": 2.0,
+  "questions": [
     {
-       "question":"1. Concept of Reynolds number is used in open channels.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"b"
+      "question": "1. The Reynolds number concept is applicable to:",
+      "answers": {
+        "a": "Open channel flows only",
+        "b": "Pipe flows only",
+        "c": "Both internal and external flows",
+        "d": "Compressible flows only"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Reynolds number is not limited to open channel flows.",
+        "b": "Incorrect. Its application extends beyond pipe flows.",
+        "c": "Correct. Reynolds number is used in the analysis of both internal and external flows to characterize the flow regime.",
+        "d": "Incorrect. Reynolds number is applicable to both compressible and incompressible flows."
+      },
+      "difficulty": "beginner"
     },
     {
-       "question":"The behavior of path lines is laminar flow.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"b"
+      "question": "2. In Reynolds experiment, a straight and undisturbed dye filament indicates:",
+      "answers": {
+        "a": "Laminar flow",
+        "b": "Transitional flow",
+        "c": "Turbulent flow",
+        "d": "Critical flow"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. A straight dye filament signifies that fluid particles move in orderly layers, characteristic of laminar flow.",
+        "b": "Incorrect. Transitional flow exhibits intermittent disturbances in the dye stream.",
+        "c": "Incorrect. Turbulent flow causes rapid mixing and dispersion of the dye.",
+        "d": "Incorrect. Critical flow refers to open channel flow conditions and is unrelated here."
+      },
+      "difficulty": "beginner"
     },
     {
-       "question":"If the Reynolds number is in between 2000 and 4000 then the flow is.",
-       "answers":{
-          "a":" Transitional flow",
-          "b":"Laminar flow "
-       },
-       "correctAnswer":"a"
+      "question": "3. For flow through a circular pipe, turbulent flow generally occurs when the Reynolds number is:",
+      "answers": {
+        "a": "Less than 2000",
+        "b": "Between 2000 and 4000",
+        "c": "Equal to 2000",
+        "d": "Greater than 4000"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Such values correspond to laminar flow.",
+        "b": "Incorrect. This range corresponds to transitional flow.",
+        "c": "Incorrect. A Reynolds number of 2000 lies near the onset of transition.",
+        "d": "Correct. Turbulent flow generally occurs when Reynolds number exceeds 4000."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The Reynolds number for flow through a pipe is directly proportional to:",
+      "answers": {
+        "a": "Dynamic viscosity",
+        "b": "Kinematic viscosity",
+        "c": "Flow velocity",
+        "d": "Inverse of pipe diameter"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Increasing viscosity decreases Reynolds number.",
+        "b": "Incorrect. Reynolds number is inversely proportional to kinematic viscosity.",
+        "c": "Correct. Reynolds number increases with increasing flow velocity.",
+        "d": "Incorrect. Reynolds number is directly proportional to pipe diameter."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Transitional flow in a circular pipe exists approximately when Reynolds number lies between:",
+      "answers": {
+        "a": "500 and 1000",
+        "b": "1000 and 1500",
+        "c": "4000 and 8000",
+        "d": "2000 and 4000"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. These values are associated with laminar flow.",
+        "b": "Incorrect. These values are below the transition range.",
+        "c": "Incorrect. These values generally correspond to turbulent flow.",
+        "d": "Correct. Reynolds numbers between 2000 and 4000 correspond to transitional flow."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Reynolds number represents the ratio of:",
+      "answers": {
+        "a": "Pressure force to gravity force",
+        "b": "Inertial force to viscous force",
+        "c": "Gravity force to pressure force",
+        "d": "Surface tension force to inertia force"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Pressure and gravity forces are not involved in the definition.",
+        "b": "Correct. Reynolds number compares inertial forces with viscous forces in a flowing fluid.",
+        "c": "Incorrect. This ratio is not represented by Reynolds number.",
+        "d": "Incorrect. Surface tension effects are represented by Weber number."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Which dimensionless number governs dynamic similarity in viscous flows?",
+      "answers": {
+        "a": "Mach number",
+        "b": "Euler number",
+        "c": "Froude number",
+        "d": "Reynolds number"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Mach number governs compressible flow similarity.",
+        "b": "Incorrect. Euler number represents pressure and inertial force effects.",
+        "c": "Incorrect. Froude number is important in gravity-dominated flows.",
+        "d": "Correct. Reynolds number governs dynamic similarity in viscous flows."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. During Reynolds experiment, turbulent flow is identified when the dye filament:",
+      "answers": {
+        "a": "Remains as a thin straight line",
+        "b": "Oscillates periodically without mixing",
+        "c": "Spreads and mixes throughout the flow",
+        "d": "Stops moving"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Such behavior is characteristic of laminar flow.",
+        "b": "Incorrect. Turbulence involves random fluctuations and mixing.",
+        "c": "Correct. The dye spreads and mixes rapidly throughout the fluid during turbulent flow.",
+        "d": "Incorrect. The fluid continues to flow during the experiment."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which factor does NOT affect the Reynolds number for pipe flow?",
+      "answers": {
+        "a": "Pipe diameter",
+        "b": "Fluid velocity",
+        "c": "Fluid viscosity",
+        "d": "Atmospheric pressure"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Pipe diameter appears directly in the Reynolds number expression.",
+        "b": "Incorrect. Velocity directly influences Reynolds number.",
+        "c": "Incorrect. Viscosity appears in the denominator of the Reynolds number expression.",
+        "d": "Correct. Atmospheric pressure does not directly affect Reynolds number for incompressible pipe flow."
+      },
+      "difficulty": "advanced"
     }
- ]
+  ]
+}
