@@ -1,204 +1,201 @@
-# Observations and Calculations
+### What is Measured?
 
-The Reynolds Experiment is performed to determine the nature of flow through a circular pipe by calculating the Reynolds number from experimentally measured quantities.
+During the experiment, the following quantities are measured:
 
-During the experiment, the volume of water collected and the corresponding collection time are measured. These observations are used to calculate the discharge, average flow velocity, Reynolds number, and finally the type of flow.
+- Internal diameter of the test pipe,
+- Rise of water level in the measuring tank,
+- Time required for collection,
+- Temperature of water,
+- Behaviour of the dye filament inside the pipe.
 
----
+These measurements are used to determine the discharge, mean velocity, Reynolds number, and the corresponding nature of flow.
 
-## Measured Data
+### Why are these Measurements Important?
 
-The following quantities are measured during the experiment.
+#### Pipe Diameter
 
-|         Parameter         | Symbol | Unit  |
-| :-----------------------: | :----: | :---: |
-| Volume of water collected | $V_c$  | m$^3$ |
-|      Collection time      |  $t$   |   s   |
-|       Pipe diameter       |  $D$   |   m   |
+The pipe diameter determines the cross-sectional area through which water flows and is required for calculating the average velocity and Reynolds number.
 
-For water at room temperature,
+#### Rise of Water Level and Collection Time
+
+These measurements are used to determine the actual discharge through the pipe.
+
+#### Temperature of Water
+
+The kinematic viscosity of water depends on temperature. Since Reynolds number is a function of viscosity, the fluid temperature influences the flow regime.
+
+#### Dye Filament Behaviour
+
+The motion of the dye provides a visual indication of the nature of flow:
+
+- Straight dye filament → Laminar flow,
+- Oscillating filament → Transitional flow,
+- Complete mixing of dye → Turbulent flow.
+
+#### Reynolds Number
+
+The Reynolds number indicates whether viscous forces or inertial forces dominate the flow and is used to classify the flow regime.
+
+### Sequential Calculations
+
+#### Step 1
+
+Measure the pipe diameter.
 
 $$
-\rho=1000;kg/m^3
+D
 $$
 
-$$
-\mu=0.001;N.s/m^2
-$$
-
----
-
-## Calculation of Pipe Area
-
-The cross-sectional area of the pipe is required to calculate the average velocity of flow.
+Calculate the pipe cross-sectional area.
 
 $$
 A=\frac{\pi D^2}{4}
 $$
 
-For
+#### Step 2
+
+Determine the discharge using the volumetric method.
 
 $$
-D=0.025;m,
+Q=\frac{A_t h}{t}
 $$
 
-$$
-A=\frac{\pi(0.025)^2}{4}
-$$
+where
 
-$$
-A=4.91\times10^{-4};m^2
-$$
+- $A_t$ = plan area of collecting tank,
+- $h$ = rise of water level,
+- $t$ = collection time.
 
----
+#### Step 3
 
-## Calculation of Discharge
-
-The discharge represents the volume flow rate through the pipe.
-
-$$
-Q=\frac{V_c}{t}
-$$
-
-For
-
-$$
-V_c=0.001;m^3
-$$
-
-and
-
-$$
-t=20;s,
-$$
-
-$$
-Q=\frac{0.001}{20}
-$$
-
-$$
-Q=5.0\times10^{-5};m^3/s
-$$
-
----
-
-## Calculation of Average Velocity
-
-The average velocity of water flowing through the pipe is
+Calculate the average velocity through the pipe.
 
 $$
 V=\frac{Q}{A}
 $$
 
-Using
+#### Step 4
+
+Calculate the Reynolds number.
 
 $$
-Q=5.0\times10^{-5};m^3/s
+Re=\frac{VD}{\nu}
 $$
 
-and
+where
 
 $$
-A=4.91\times10^{-4};m^2,
+\nu
 $$
 
-$$
-V=\frac{5.0\times10^{-5}}{4.91\times10^{-4}}
-$$
+is the kinematic viscosity of water.
+
+#### Step 5
+
+Classify the flow according to Reynolds number.
+
+- Laminar flow:
 
 $$
-V=0.102;m/s
+Re<2000
 $$
 
----
-
-## Calculation of Reynolds Number
-
-The Reynolds number is calculated using
+- Transitional flow:
 
 $$
-Re=\frac{\rho VD}{\mu}
+2000<Re<4000
 $$
 
-Substituting,
+- Turbulent flow:
 
 $$
-Re=\frac{1000\times0.102\times0.025}{0.001}
+Re>4000
 $$
 
+### Solved Numerical Example
+
+Given,
+
+Pipe diameter,
+
 $$
-Re=2550
+D=0.02\ m
 $$
 
----
+Plan area of collecting tank,
 
-## Identification of Flow Type
+$$
+A_t=0.12\ m^2
+$$
 
-The calculated Reynolds number is used to determine the nature of flow.
+Rise of water level,
 
-| Reynolds Number |  Nature of Flow   |
-| :-------------: | :---------------: |
-|    $Re<2000$    |   Laminar Flow    |
-| $2000<Re<4000$  | Transitional Flow |
-|    $Re>4000$    |  Turbulent Flow   |
+$$
+h=0.03\ m
+$$
+
+Collection time,
+
+$$
+t=40\ s
+$$
+
+Kinematic viscosity of water,
+
+$$
+\nu=1\times10^{-6}\ m^2/s
+$$
+
+Pipe area,
+
+$$
+A=\frac{\pi(0.02)^2}{4}
+=3.14\times10^{-4}\ m^2
+$$
+
+Discharge,
+
+$$
+Q=\frac{0.12\times0.03}{40}
+=9\times10^{-5}\ m^3/s
+$$
+
+Average velocity,
+
+$$
+V=\frac{9\times10^{-5}}{3.14\times10^{-4}}
+=0.287\ m/s
+$$
+
+Reynolds number,
+
+$$
+Re=\frac{0.287\times0.02}{1\times10^{-6}}
+=5740
+$$
 
 Since
 
 $$
-Re=2550,
+Re>4000,
 $$
 
-the flow is classified as
+the flow is turbulent.
 
-$$
-\boxed{\text{Transitional Flow}}
-$$
+### Observation Table
 
----
+| Trial | Rise of Water Level (m) | Time (s) | Discharge ($m^3/s$) | Velocity (m/s) | Reynolds Number | Nature of Flow |
+| ----- | ----------------------: | -------: | ------------------: | -------------: | --------------: | :------------- |
+| 1     |                   0.010 |       60 |       2.0×10$^{-5}$ |          0.064 |            1280 | Laminar        |
+| 2     |                   0.015 |       50 |       3.6×10$^{-5}$ |          0.115 |            2300 | Transitional   |
+| 3     |                   0.020 |       50 |       4.8×10$^{-5}$ |          0.153 |            3060 | Transitional   |
+| 4     |                   0.025 |       45 |       6.7×10$^{-5}$ |          0.213 |            4260 | Turbulent      |
+| 5     |                   0.030 |       40 |       9.0×10$^{-5}$ |          0.287 |            5740 | Turbulent      |
 
-## Sample Calculation Summary
+### Interpretation
 
-The calculations performed during the experiment follow the sequence:
+The observations show that the nature of flow changes with increasing velocity and Reynolds number.
 
-1. Calculate the pipe area.
+At low Reynolds numbers, viscous forces dominate and the dye filament remains straight, indicating laminar flow. As the Reynolds number increases, disturbances appear and transitional flow is observed. At higher Reynolds numbers, inertial forces dominate and the dye mixes completely with water, producing turbulent flow.
 
-$$
-A=\frac{\pi D^2}{4}
-$$
-
-2. Calculate the discharge.
-
-$$
-Q=\frac{V_c}{t}
-$$
-
-3. Calculate the average velocity.
-
-$$
-V=\frac{Q}{A}
-$$
-
-4. Calculate the Reynolds number.
-
-$$
-Re=\frac{\rho VD}{\mu}
-$$
-
-5. Identify the nature of flow using the Reynolds number.
-
----
-
-## Sample Observation Table
-
-| Trial | $V_c$ (m$^3$) | $t$ (s) | $Q$ ($10^{-5}$ m$^3$/s) | $V$ (m/s) | Reynolds Number |  Flow Type   |
-| :---: | :-----------: | :-----: | :---------------------: | :-------: | :-------------: | :----------: |
-|   1   |    0.0005     |   20    |          2.50           |   0.051   |      1275       |   Laminar    |
-|   2   |    0.0010     |   20    |          5.00           |   0.102   |      2550       | Transitional |
-|   3   |    0.0015     |   20    |          7.50           |   0.153   |      3825       | Transitional |
-|   4   |    0.0020     |   20    |          10.00          |   0.204   |      5100       |  Turbulent   |
-
----
-
-## Interpretation
-
-The Reynolds number increases with the discharge and average velocity of flow. Small Reynolds numbers indicate smooth laminar flow, while larger values correspond to turbulent flow. The experimentally calculated Reynolds number provides a convenient criterion for identifying the flow regime inside the pipe.
+The experiment demonstrates that the Reynolds number serves as an important criterion for distinguishing between laminar, transitional, and turbulent flow in pipes, thereby verifying the observations made by Osborne Reynolds.
