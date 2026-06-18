@@ -1,18 +1,158 @@
-[
+{
+  "version": 2.0,
+  "questions": [
     {
-       "question":"1. Flow to be laminar the Reynolds number should be greater than 2000.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"b"
+      "question": "1. Reynolds number is a dimensionless quantity used to predict:",
+      "answers": {
+        "a": "Pressure loss only",
+        "b": "Flow regime of a fluid",
+        "c": "Fluid density",
+        "d": "Specific gravity"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Reynolds number is not used exclusively for pressure loss calculations.",
+        "b": "Correct. Reynolds number helps determine whether the flow is laminar, transitional, or turbulent.",
+        "c": "Incorrect. Fluid density is a property and is not predicted by Reynolds number.",
+        "d": "Incorrect. Specific gravity is unrelated to Reynolds number."
+      },
+      "difficulty": "beginner"
     },
     {
-       "question":"2. For flow to be turbulent the flow should be more than 400.",
-       "answers":{
-          "a":"True",
-          "b":"False"
-       },
-       "correctAnswer":"b"
+      "question": "2. For flow in a circular pipe, laminar flow generally exists when the Reynolds number is:",
+      "answers": {
+        "a": "Less than 2000",
+        "b": "Between 2000 and 4000",
+        "c": "Greater than 4000",
+        "d": "Equal to 10000"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Laminar flow in a circular pipe generally occurs when the Reynolds number is less than 2000.",
+        "b": "Incorrect. This range corresponds to transitional flow.",
+        "c": "Incorrect. Such values generally indicate turbulent flow.",
+        "d": "Incorrect. This value lies in the turbulent region."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In Reynolds experiment, colored dye is introduced into the flow mainly to:",
+      "answers": {
+        "a": "Increase fluid velocity",
+        "b": "Reduce viscosity",
+        "c": "Visualize the flow pattern",
+        "d": "Measure pressure"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Dye does not affect the velocity significantly.",
+        "b": "Incorrect. Dye is not added to alter viscosity.",
+        "c": "Correct. Dye helps observe whether the flow is laminar, transitional, or turbulent.",
+        "d": "Incorrect. Pressure is measured using separate devices."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The Reynolds number is defined as the ratio of:",
+      "answers": {
+        "a": "Pressure force to gravitational force",
+        "b": "Gravitational force to viscous force",
+        "c": "Inertial force to viscous force",
+        "d": "Inertial force to pressure force"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. This ratio is not represented by Reynolds number.",
+        "b": "Incorrect. Reynolds number does not compare gravity and viscous forces.",
+        "c": "Correct. Reynolds number is the ratio of inertial forces to viscous forces.",
+        "d": "Incorrect. Pressure forces are not involved in its definition."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Transitional flow in a circular pipe generally occurs when Reynolds number lies between:",
+      "answers": {
+        "a": "0 and 500",
+        "b": "2000 and 4000",
+        "c": "4000 and 10000",
+        "d": "10000 and 20000"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Such values are within the laminar regime.",
+        "b": "Correct. Reynolds numbers between 2000 and 4000 correspond to transitional flow.",
+        "c": "Incorrect. These values are associated with turbulent flow.",
+        "d": "Incorrect. These values are well within the turbulent regime."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which parameter is directly proportional to Reynolds number?",
+      "answers": {
+        "a": "Fluid viscosity",
+        "b": "Kinematic viscosity",
+        "c": "Dynamic viscosity",
+        "d": "Flow velocity"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Increasing viscosity reduces Reynolds number.",
+        "b": "Incorrect. Reynolds number is inversely proportional to kinematic viscosity.",
+        "c": "Incorrect. Dynamic viscosity appears in the denominator of the Reynolds number expression.",
+        "d": "Correct. Reynolds number increases with increasing velocity."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. In Reynolds experiment, turbulent flow is indicated when the dye filament:",
+      "answers": {
+        "a": "Remains as a straight line",
+        "b": "Moves with zero velocity",
+        "c": "Diffuses and mixes throughout the fluid",
+        "d": "Disappears completely"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A straight dye filament indicates laminar flow.",
+        "b": "Incorrect. Fluid continues to move during the experiment.",
+        "c": "Correct. In turbulent flow, the dye disperses and mixes rapidly throughout the fluid.",
+        "d": "Incorrect. The dye remains present but becomes mixed with the fluid."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which similarity criterion is most important in viscous flow analysis?",
+      "answers": {
+        "a": "Froude number",
+        "b": "Mach number",
+        "c": "Euler number",
+        "d": "Reynolds number"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Froude number is mainly used in open channel flow.",
+        "b": "Incorrect. Mach number is important in compressible flow.",
+        "c": "Incorrect. Euler number relates pressure and inertial forces.",
+        "d": "Correct. Reynolds number is the governing similarity parameter for viscous flows."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Reynolds experiment demonstrates the transition between laminar and turbulent flow by observing:",
+      "answers": {
+        "a": "Pressure fluctuations only",
+        "b": "Temperature distribution",
+        "c": "Variation in fluid density",
+        "d": "Behavior of dye streamlines"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Pressure fluctuations are not directly used to classify the flow in this experiment.",
+        "b": "Incorrect. Temperature distribution is not the basis of Reynolds experiment.",
+        "c": "Incorrect. Density variation is negligible for incompressible flow.",
+        "d": "Correct. The nature of the dye streamlines reveals whether the flow is laminar, transitional, or turbulent."
+      },
+      "difficulty": "advanced"
     }
- ]
+  ]
+}
